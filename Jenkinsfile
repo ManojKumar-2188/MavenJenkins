@@ -19,10 +19,6 @@ pipeline {
                sh 'mvn package'
             }
         }
-         stage("Maven Deploy") {
-            steps {
-               echo "Deploy war file"
-            }
-        }
+        
     }
 }
