@@ -8,14 +8,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class WelcomeController {
 	
-	@RequestMapping(method = RequestMethod.GET, produces = {"application/json"})
-	public @ResponseBody String helloWorld() {
+	@RequestMapping(method = RequestMethod.GET)
+	public String helloWorld() {	
+		return "index"; 
 		
-		//Flux
-		
-		
-		
-		
-		return "Hello World! from Manoj"; //"application/json" mean this is a text not a redirect
 	}
 }
